@@ -9,7 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A simple GUI class that creates a window with buttons based on the Logics implementation.
+ * A simple GUI class that creates a window with buttons based on the Logics
+ * implementation.
  */
 public final class GUI extends JFrame {
 
@@ -48,5 +49,4 @@ public final class GUI extends JFrame {
         pack();
         this.setVisible(true);
     }
-
 }
