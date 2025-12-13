@@ -6,9 +6,9 @@ import java.util.Random;
  * Implementation of the Logics interface.
  */
 public class LogicsImpl implements Logics {
+    private static final Random RANDOM = new Random();
     private final int size;
     private boolean[][] grid;
-    private final Random random = new Random();
 
     /**
      * Constructor.
@@ -18,11 +18,10 @@ public class LogicsImpl implements Logics {
     public LogicsImpl(final int size) {
         this.size = size;
         this.grid = new boolean[size][size];
-
         int placed = 0;
         while (placed < 3) {
-            int row = random.nextInt(size);
-            int col = random.nextInt(size);
+            final int row = RANDOM.nextInt(size);
+            final int col = RANDOM.nextInt(size);
             if (!this.grid[row][col]) {
                 this.grid[row][col] = true;
                 placed++;
@@ -35,7 +34,7 @@ public class LogicsImpl implements Logics {
      */
     @Override
     public void tick() {
-        boolean[][] nextGrid = new boolean[size][size];
+        final boolean[][] nextGrid = new boolean[size][size];
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 // If already active, it stays active
@@ -52,7 +51,7 @@ public class LogicsImpl implements Logics {
         this.grid = nextGrid;
     }
 
-    private boolean hasActiveNeighbor(int r, int c) {
+    private boolean hasActiveNeighbor(final int r, final int c) {
         for (int i = r - 1; i <= r + 1; i++) {
             for (int j = c - 1; j <= c + 1; j++) {
                 if (i >= 0 && i < size && j >= 0 && j < size) {
@@ -72,7 +71,7 @@ public class LogicsImpl implements Logics {
      * {@inheritDoc}
      */
     @Override
-    public boolean isActive(int row, int col) {
+    public boolean isActive(final int row, final int col) {
         return this.grid[row][col];
     }
 

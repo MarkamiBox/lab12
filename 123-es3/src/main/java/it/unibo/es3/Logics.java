@@ -13,7 +13,7 @@ public interface Logics {
     /**
      * @param row the row
      * @param col the column
-     * @return whether the cell at (row, col) is active
+     * @return the cell at (row, col) that is active
      */
     boolean isActive(int row, int col);
 

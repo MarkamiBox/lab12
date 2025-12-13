@@ -1,4 +1,4 @@
-C:\Users\pc\Desktop\Java\lab12\121-es1\build\classes\java\main\it\unibo\es1\GUI.class
-C:\Users\pc\Desktop\Java\lab12\121-es1\build\classes\java\main\it\unibo\es1\Logics.class
-C:\Users\pc\Desktop\Java\lab12\121-es1\build\classes\java\main\it\unibo\es1\LogicsImpl.class
-C:\Users\pc\Desktop\Java\lab12\121-es1\build\classes\java\main\it\unibo\es1\Test.class
+C:\Users\Salvatore\Desktop\Java\lab12\121-es1\build\classes\java\main\it\unibo\es1\GUI.class
+C:\Users\Salvatore\Desktop\Java\lab12\121-es1\build\classes\java\main\it\unibo\es1\Logics.class
+C:\Users\Salvatore\Desktop\Java\lab12\121-es1\build\classes\java\main\it\unibo\es1\LogicsImpl.class
+C:\Users\Salvatore\Desktop\Java\lab12\121-es1\build\classes\java\main\it\unibo\es1\Test.class
